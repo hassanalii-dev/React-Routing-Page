@@ -18,6 +18,8 @@ import Footer from "./components/Footer.jsx";
 createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Navigate to="/home" replace />} />
+
         <Route path="/home" element={<><Navbar /><Home /><Footer /></>} />
 
         <Route path="/about" element={<><Navbar /><About /><Footer /></>} />
