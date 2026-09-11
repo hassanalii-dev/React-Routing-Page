@@ -1,23 +1,29 @@
-import { Link } from "react-router";
+// src/components/Footer.jsx
+
+import { NavLink } from "react-router";
 
 function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[#07111f]">
+
       <div className="mx-auto max-w-7xl px-6 py-10">
 
         <div className="grid gap-8 md:grid-cols-3">
 
-          {/* Logo + Name */}
-          <div className="animate-[fadeUp_0.7s_ease-out]">
+          {/* About */}
+          <div className="animate-[fadeUp_0.6s_ease-out]">
 
-            <Link to="/" className="group flex items-center gap-3">
+            <NavLink
+              to="/home"
+              className="group flex items-center gap-3"
+            >
 
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-indigo-400/30 bg-indigo-500/15 text-lg font-black text-indigo-300 shadow-lg shadow-indigo-500/10 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:border-indigo-300/50 group-hover:bg-indigo-500/25 group-hover:text-indigo-200 group-hover:shadow-indigo-500/20">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-indigo-400/30 bg-indigo-500/15 font-black text-indigo-300 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-indigo-400/60 group-hover:bg-indigo-500/25 group-hover:shadow-lg group-hover:shadow-indigo-500/20">
                 H
               </div>
 
               <div>
-                <p className="text-base font-bold tracking-tight text-white transition-colors duration-300 group-hover:text-indigo-300">
+                <p className="font-bold text-white transition-colors duration-300 group-hover:text-indigo-300">
                   Hassan Ali
                 </p>
 
@@ -26,15 +32,14 @@ function Footer() {
                 </p>
               </div>
 
-            </Link>
+            </NavLink>
 
-            <p className="mt-3 max-w-sm text-sm leading-6 text-slate-400">
+            <p className="mt-4 max-w-sm text-sm leading-6 text-slate-400">
               Full Stack Web Development learner passionate about building
               modern and useful web applications.
             </p>
 
           </div>
-
 
           {/* Quick Links */}
           <div className="animate-[fadeUp_0.8s_ease-out]">
@@ -45,66 +50,86 @@ function Footer() {
 
             <div className="mt-4 flex flex-col gap-2 text-sm text-slate-400">
 
-              <Link
+              <NavLink
                 to="/about"
-                className="transition-all duration-300 hover:translate-x-1 hover:text-indigo-400"
+                className="w-fit transition-all duration-300 hover:translate-x-1 hover:text-indigo-400"
               >
                 About
-              </Link>
+              </NavLink>
 
-              <Link
+              <NavLink
+                to="/cv"
+                className="w-fit transition-all duration-300 hover:translate-x-1 hover:text-indigo-400"
+              >
+                CV
+              </NavLink>
+
+              <NavLink
                 to="/skills"
-                className="transition-all duration-300 hover:translate-x-1 hover:text-indigo-400"
+                className="w-fit transition-all duration-300 hover:translate-x-1 hover:text-indigo-400"
               >
                 Skills
-              </Link>
+              </NavLink>
 
-              <Link
+              <NavLink
                 to="/projects"
-                className="transition-all duration-300 hover:translate-x-1 hover:text-indigo-400"
+                className="w-fit transition-all duration-300 hover:translate-x-1 hover:text-indigo-400"
               >
                 Projects
-              </Link>
+              </NavLink>
 
-              <Link
+              <NavLink
                 to="/contact"
-                className="transition-all duration-300 hover:translate-x-1 hover:text-indigo-400"
+                className="w-fit transition-all duration-300 hover:translate-x-1 hover:text-indigo-400"
               >
                 Contact
-              </Link>
+              </NavLink>
 
             </div>
 
           </div>
 
-
           {/* Contact */}
-          <div className="animate-[fadeUp_0.9s_ease-out]">
+          <div className="animate-[fadeUp_1s_ease-out]">
 
             <h3 className="font-semibold text-white">
               Contact
             </h3>
 
             <div className="mt-4 space-y-2 text-sm text-slate-400">
-              <p>Hassan Ali</p>
-              <p>Lahore, Pakistan</p>
-              <p>Full Stack Web Developer</p>
-              <p className="break-all">
+
+              <p className="transition-colors duration-300 hover:text-slate-200">
+                Hassan Ali
+              </p>
+
+              <p className="transition-colors duration-300 hover:text-slate-200">
+                Lahore, Pakistan
+              </p>
+
+              <p className="transition-colors duration-300 hover:text-slate-200">
+                Full Stack Web Developer
+              </p>
+
+              <p className="break-all transition-colors duration-300 hover:text-indigo-400">
                 hassanmughal085870@gmail.com
               </p>
+
             </div>
 
           </div>
 
         </div>
 
-
-        {/* Copyright */}
         <div className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-slate-500">
-          © 2026 Hassan Ali. All Rights Reserved.
+
+          <p className="animate-[fadeSoft_1.2s_ease-out]">
+            © 2026 Hassan Ali. All Rights Reserved.
+          </p>
+
         </div>
 
       </div>
+
     </footer>
   );
 }

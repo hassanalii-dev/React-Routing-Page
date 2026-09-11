@@ -1,3 +1,5 @@
+// src/pages/Home.jsx
+
 import { Link } from "react-router";
 
 function Home() {
@@ -7,6 +9,7 @@ function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
 
+        {/* Background Glow */}
         <div className="absolute -left-40 -top-40 h-96 w-96 animate-pulse rounded-full bg-indigo-600/20 blur-3xl"></div>
 
         <div className="absolute -bottom-40 -right-40 h-96 w-96 animate-pulse rounded-full bg-purple-600/20 blur-3xl [animation-delay:1s]"></div>
@@ -21,12 +24,12 @@ function Home() {
 
             <h1 className="animate-[fadeUp_0.8s_ease-out] text-5xl font-extrabold leading-tight sm:text-6xl lg:text-7xl">
               Hi, I'm{" "}
-              <span className="text-indigo-400">
+              <span className="inline-block text-indigo-400 ">
                 Hassan Ali
               </span>
             </h1>
 
-            <h2 className="mt-6 animate-[fadeUp_1s_ease-out] text-2xl font-semibold text-slate-200 sm:text-2xl">
+            <h2 className="mt-6 animate-[fadeUp_1s_ease-out] text-xl font-semibold text-slate-200 sm:text-2xl">
               Full Stack Web Development Learner & BSCS Student
             </h2>
 
@@ -36,6 +39,7 @@ function Home() {
               modern technologies.
             </p>
 
+            {/* Buttons */}
             <div className="mt-10 flex animate-[fadeUp_1.2s_ease-out] flex-wrap gap-4">
 
               <Link
@@ -47,28 +51,44 @@ function Home() {
 
               <Link
                 to="/contact"
-                className="rounded-xl border border-white/15 bg-white/5 px-7 py-3.5 font-semibold transition-all duration-300 hover:-translate-y-1 hover:border-indigo-400/40 hover:bg-white/10 active:scale-95"
+                className="rounded-xl border border-white/15 bg-white/5 px-7 py-3.5 font-semibold transition-all duration-300 hover:-translate-y-1 hover:border-indigo-400/40 hover:bg-white/10 hover:shadow-lg hover:shadow-indigo-500/5 active:scale-95"
               >
                 Contact Me
               </Link>
 
             </div>
 
+            {/* Stats */}
             <div className="mt-12 flex animate-[fadeUp_1.3s_ease-out] flex-wrap gap-8 border-t border-white/10 pt-8">
 
               <div className="transition-all duration-300 hover:-translate-y-1">
-                <p className="text-2xl font-bold">3+</p>
-                <p className="text-sm text-slate-500">Projects</p>
+                <p className="text-2xl font-bold">
+                  3+
+                </p>
+
+                <p className="text-sm text-slate-500">
+                  Projects
+                </p>
               </div>
 
               <div className="transition-all duration-300 hover:-translate-y-1">
-                <p className="text-2xl font-bold">7+</p>
-                <p className="text-sm text-slate-500">Technologies</p>
+                <p className="text-2xl font-bold">
+                  6+
+                </p>
+
+                <p className="text-sm text-slate-500">
+                  Technologies
+                </p>
               </div>
 
               <div className="transition-all duration-300 hover:-translate-y-1">
-                <p className="text-2xl font-bold">2026</p>
-                <p className="text-sm text-slate-500">Learning Journey</p>
+                <p className="text-2xl font-bold">
+                  2026
+                </p>
+
+                <p className="text-sm text-slate-500">
+                  Learning Journey
+                </p>
               </div>
 
             </div>

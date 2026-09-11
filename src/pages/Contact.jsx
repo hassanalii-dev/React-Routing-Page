@@ -107,7 +107,7 @@ function Contact() {
         >
 
           <div>
-            <label className="">
+            <label className="mb-2 block text-sm font-medium">
               Name
             </label>
 

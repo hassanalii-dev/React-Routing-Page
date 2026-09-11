@@ -175,7 +175,7 @@ function CV() {
         </section>
 
         {/* Projects */}
-        <section className="animate-[fadeUp_1.2s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-xl hover:shadow-indigo-500/5">
+          <section className="animate-[fadeUp_1.1s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-xl hover:shadow-indigo-500/5">
 
           <h2 className="text-2xl font-bold">
             Projects
@@ -183,21 +183,24 @@ function CV() {
 
           <ul className="mt-6 space-y-3 text-slate-400">
 
-            <li>• TECHORA — Tech E-commerce Website</li>
+            <li className="transition-all duration-300 hover:translate-x-1 hover:text-indigo-300">
+              • TECHORA — Tech E-commerce Website
+            </li>
 
-            <li>
+            <li className="transition-all duration-300 hover:translate-x-1 hover:text-indigo-300">
               • Weather App — React Weather Application
             </li>
 
-            <li>
-              • WhatsApp Clone — HTML CSS & JavaScript Project
+            <li className="transition-all duration-300 hover:translate-x-1 hover:text-indigo-300">
+              • WhatsApp Clone — HTML, CSS & JavaScript
             </li>
 
-            <li>
-              • Chatbot — Real Starbucks Chatbot
+            <li className="transition-all duration-300 hover:translate-x-1 hover:text-indigo-300">
+              • Chatbot — Starbucks Chatbot
             </li>
 
           </ul>
+
 
         </section>
 

@@ -1,3 +1,5 @@
+// src/pages/Skills.jsx
+
 function Skills() {
   const skills = [
     {
@@ -33,7 +35,8 @@ function Skills() {
   return (
     <main className="mx-auto max-w-7xl px-6 py-20">
 
-      <div className="max-w-3xl animate-[fadeUp_0.7s_ease-out]">
+      {/* Heading */}
+      <div className="max-w-3xl animate-[fadeUp_0.6s_ease-out]">
 
         <p className="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-400">
           My Expertise
@@ -50,19 +53,20 @@ function Skills() {
 
       </div>
 
+      {/* Skills */}
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
         {skills.map((skill, index) => (
           <div
             key={skill.name}
-            className="group animate-[fadeUp_0.6s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-400/40 hover:bg-white/10 hover:shadow-2xl hover:shadow-indigo-500/10"
             style={{
               animationDelay: `${index * 100}ms`,
               animationFillMode: "both",
             }}
+            className="group animate-[fadeUp_0.7s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-400/40 hover:bg-white/10 hover:shadow-2xl hover:shadow-indigo-500/10"
           >
 
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500/10 text-lg font-bold text-indigo-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-indigo-500/20">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500/10 text-lg font-bold text-indigo-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-indigo-500/20 group-hover:shadow-lg group-hover:shadow-indigo-500/10">
               {index + 1}
             </div>
 
