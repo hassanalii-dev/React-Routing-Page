@@ -1,5 +1,3 @@
-// src/components/Footer.jsx
-
 import { NavLink } from "react-router";
 
 function Footer() {
@@ -10,7 +8,6 @@ function Footer() {
 
         <div className="grid gap-8 md:grid-cols-3">
 
-          {/* About */}
           <div className="animate-[fadeUp_0.6s_ease-out]">
 
             <NavLink
@@ -41,7 +38,6 @@ function Footer() {
 
           </div>
 
-          {/* Quick Links */}
           <div className="animate-[fadeUp_0.8s_ease-out]">
 
             <h3 className="font-semibold text-white">
@@ -89,7 +85,6 @@ function Footer() {
 
           </div>
 
-          {/* Contact */}
           <div className="animate-[fadeUp_1s_ease-out]">
 
             <h3 className="font-semibold text-white">

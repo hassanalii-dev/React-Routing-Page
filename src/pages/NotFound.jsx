@@ -1,5 +1,3 @@
-// src/pages/NotFound.jsx
-
 import { NavLink } from "react-router";
 
 function NotFound() {

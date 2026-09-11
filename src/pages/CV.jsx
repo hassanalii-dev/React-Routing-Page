@@ -2,7 +2,6 @@ function CV() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-20">
 
-      {/* Page Header */}
       <div className="flex animate-[fadeUp_0.7s_ease-out] flex-col justify-between gap-6 sm:flex-row sm:items-end">
 
         <div>
@@ -30,7 +29,6 @@ function CV() {
 
       <div className="mt-12 space-y-8">
 
-        {/* Profile */}
         <section className="animate-[fadeUp_0.8s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-xl hover:shadow-indigo-500/5">
 
           <h2 className="text-2xl font-bold">
@@ -45,10 +43,9 @@ function CV() {
             Motivated BSCS student interested in modern web development,
             frontend technologies and building practical applications.
           </p>
-          
+
         </section>
 
-        {/* Education */}
         <section className="animate-[fadeUp_0.9s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-xl hover:shadow-indigo-500/5">
 
           <h2 className="text-2xl font-bold">
@@ -57,7 +54,7 @@ function CV() {
 
           <div className="mt-6 space-y-8">
 
-                        <div className="border-l-2 border-indigo-500 pl-5">
+            <div className="border-l-2 border-indigo-500 pl-5">
 
               <span className="rounded-full bg-slate-500/10 px-3 py-1 text-xs font-semibold text-slate-400">
                 Completed
@@ -83,7 +80,6 @@ function CV() {
 
             </div>
 
-            {/* BSCS */}
             <div className="border-l-2 border-indigo-500 pl-5">
 
               <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-semibold text-indigo-300">
@@ -110,14 +106,10 @@ function CV() {
 
             </div>
 
-            {/* Intermediate */}
-
-
           </div>
 
         </section>
 
-        {/* Learning */}
         <section className="animate-[fadeUp_1s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-xl hover:shadow-indigo-500/5">
 
           <h2 className="text-2xl font-bold">
@@ -140,7 +132,6 @@ function CV() {
 
         </section>
 
-        {/* Skills */}
         <section className="animate-[fadeUp_1.1s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-xl hover:shadow-indigo-500/5">
 
           <h2 className="text-2xl font-bold">
@@ -174,8 +165,7 @@ function CV() {
 
         </section>
 
-        {/* Projects */}
-          <section className="animate-[fadeUp_1.1s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-xl hover:shadow-indigo-500/5">
+        <section className="animate-[fadeUp_1.1s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-xl hover:shadow-indigo-500/5">
 
           <h2 className="text-2xl font-bold">
             Projects
@@ -200,7 +190,6 @@ function CV() {
             </li>
 
           </ul>
-
 
         </section>
 

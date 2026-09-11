@@ -52,7 +52,6 @@ function Contact() {
 
       <div className="mt-14 grid gap-8 lg:grid-cols-2">
 
-        {/* Contact Information */}
         <div className="animate-[fadeUp_0.8s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-400/40 hover:shadow-2xl hover:shadow-indigo-500/10">
 
           <h2 className="text-2xl font-bold">
@@ -100,7 +99,6 @@ function Contact() {
 
         </div>
 
-        {/* Form */}
         <form
           onSubmit={handleSubmit}
           className="animate-[fadeUp_0.8s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-400/40 hover:shadow-2xl hover:shadow-indigo-500/10"

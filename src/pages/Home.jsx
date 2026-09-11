@@ -1,15 +1,11 @@
-// src/pages/Home.jsx
-
 import { Link } from "react-router";
 
 function Home() {
   return (
     <main>
 
-      {/* Hero Section */}
       <section className="relative overflow-hidden">
 
-        {/* Background Glow */}
         <div className="absolute -left-40 -top-40 h-96 w-96 animate-pulse rounded-full bg-indigo-600/20 blur-3xl"></div>
 
         <div className="absolute -bottom-40 -right-40 h-96 w-96 animate-pulse rounded-full bg-purple-600/20 blur-3xl [animation-delay:1s]"></div>
@@ -24,7 +20,7 @@ function Home() {
 
             <h1 className="animate-[fadeUp_0.8s_ease-out] text-5xl font-extrabold leading-tight sm:text-6xl lg:text-7xl">
               Hi, I'm{" "}
-              <span className="inline-block text-indigo-400 ">
+              <span className="inline-block text-indigo-400">
                 Hassan Ali
               </span>
             </h1>
@@ -39,7 +35,6 @@ function Home() {
               modern technologies.
             </p>
 
-            {/* Buttons */}
             <div className="mt-10 flex animate-[fadeUp_1.2s_ease-out] flex-wrap gap-4">
 
               <Link
@@ -58,7 +53,6 @@ function Home() {
 
             </div>
 
-            {/* Stats */}
             <div className="mt-12 flex animate-[fadeUp_1.3s_ease-out] flex-wrap gap-8 border-t border-white/10 pt-8">
 
               <div className="transition-all duration-300 hover:-translate-y-1">

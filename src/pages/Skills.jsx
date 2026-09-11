@@ -1,5 +1,3 @@
-// src/pages/Skills.jsx
-
 function Skills() {
   const skills = [
     {
@@ -35,7 +33,6 @@ function Skills() {
   return (
     <main className="mx-auto max-w-7xl px-6 py-20">
 
-      {/* Heading */}
       <div className="max-w-3xl animate-[fadeUp_0.6s_ease-out]">
 
         <p className="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-400">
@@ -53,7 +50,6 @@ function Skills() {
 
       </div>
 
-      {/* Skills */}
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
         {skills.map((skill, index) => (

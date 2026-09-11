@@ -1,5 +1,3 @@
-// src/components/Navbar.jsx
-
 import { useState } from "react";
 import { NavLink } from "react-router";
 
@@ -21,7 +19,6 @@ function Navbar() {
 
       <div className="flex items-center justify-between px-5 py-4 lg:px-8">
 
-        {/* Logo */}
         <NavLink
           to="/home"
           className="group flex animate-[fadeSoft_0.7s_ease-out] items-center gap-3"
@@ -43,7 +40,6 @@ function Navbar() {
 
         </NavLink>
 
-        {/* Desktop Navigation */}
         <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 lg:flex">
 
           {links.map((link, index) => (
@@ -69,7 +65,6 @@ function Navbar() {
 
         </nav>
 
-        {/* Let's Talk */}
         <NavLink
           to="/contact"
           className="hidden animate-[fadeSoft_1s_ease-out] rounded-xl bg-indigo-500 px-5 py-2.5 text-sm font-semibold transition-all duration-300 hover:-translate-y-1 hover:bg-indigo-400 hover:shadow-lg hover:shadow-indigo-500/20 active:scale-95 lg:block"
@@ -77,7 +72,6 @@ function Navbar() {
           Let's Talk
         </NavLink>
 
-        {/* Mobile Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="rounded-lg border border-white/10 px-3 py-2 text-lg leading-none text-slate-300 transition-all duration-300 hover:border-indigo-400/40 hover:bg-white/5 hover:text-white active:scale-95 lg:hidden"
@@ -90,7 +84,6 @@ function Navbar() {
 
       </div>
 
-      {/* Mobile Navigation */}
       <div
         className={`overflow-hidden border-t border-white/10 bg-[#07111f] transition-all duration-300 lg:hidden ${
           menuOpen

@@ -1,5 +1,3 @@
-// src/pages/Projects.jsx
-
 import { NavLink } from "react-router";
 
 function Projects() {
@@ -41,7 +39,6 @@ function Projects() {
   return (
     <main className="mx-auto max-w-7xl px-6 py-20">
 
-      {/* Heading */}
       <div className="max-w-3xl animate-[fadeUp_0.6s_ease-out]">
 
         <p className="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-400">
@@ -59,7 +56,6 @@ function Projects() {
 
       </div>
 
-      {/* Project Cards */}
       <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
         {projects.map((project, index) => (

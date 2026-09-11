@@ -1,12 +1,9 @@
-// src/pages/About.jsx
-
 import { NavLink } from "react-router";
 
 function About() {
   return (
     <main className="mx-auto max-w-7xl px-6 py-20">
 
-      {/* Heading */}
       <div className="max-w-3xl animate-[fadeUp_0.6s_ease-out]">
 
         <p className="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-400">
@@ -25,7 +22,6 @@ function About() {
 
       </div>
 
-      {/* Cards */}
       <div className="mt-14 grid gap-6 md:grid-cols-2">
 
         <div className="group animate-[fadeUp_0.8s_ease-out] rounded-2xl border border-white/10 bg-white/5 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-400/40 hover:bg-white/[0.07] hover:shadow-2xl hover:shadow-indigo-500/10">

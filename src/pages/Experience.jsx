@@ -72,7 +72,6 @@ function Experience() {
   return (
     <main className="mx-auto max-w-7xl px-6 py-20">
 
-      {/* Header */}
       <div className="mx-auto max-w-3xl text-center animate-[fadeUp_0.7s_ease-out]">
 
         <p className="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-400">
@@ -90,10 +89,8 @@ function Experience() {
 
       </div>
 
-      {/* Experience Timeline */}
       <div className="relative mx-auto mt-16 max-w-5xl">
 
-        {/* Timeline Line */}
         <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-indigo-500 via-indigo-400/40 to-transparent md:left-1/2 md:block md:-translate-x-1/2"></div>
 
         <div className="space-y-10">
@@ -112,13 +109,10 @@ function Experience() {
               }}
             >
 
-              {/* Timeline Dot */}
               <div className="absolute left-1/2 top-8 hidden h-4 w-4 -translate-x-1/2 rounded-full border-4 border-slate-950 bg-indigo-400 shadow-lg shadow-indigo-500/40 md:block"></div>
 
-              {/* Card */}
               <div className="group rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-indigo-400/40 hover:bg-white/10 hover:shadow-2xl hover:shadow-indigo-500/10">
 
-                {/* Year */}
                 <div className="flex flex-wrap items-center justify-between gap-3">
 
                   <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-semibold text-indigo-300">
@@ -131,22 +125,18 @@ function Experience() {
 
                 </div>
 
-                {/* Title */}
                 <h2 className="mt-5 text-2xl font-bold transition-colors duration-300 group-hover:text-indigo-300">
                   {experience.title}
                 </h2>
 
-                {/* Company */}
                 <p className="mt-2 text-base font-medium text-indigo-400">
                   {experience.company}
                 </p>
 
-                {/* Description */}
                 <p className="mt-5 leading-7 text-slate-400">
                   {experience.description}
                 </p>
 
-                {/* Skills */}
                 <div className="mt-6 border-t border-white/10 pt-5">
 
                   <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
@@ -175,7 +165,6 @@ function Experience() {
         </div>
       </div>
 
-      {/* Bottom Section */}
       <div className="mx-auto mt-16 max-w-3xl rounded-2xl border border-indigo-400/20 bg-indigo-500/5 p-8 text-center animate-[fadeUp_1s_ease-out]">
 
         <h2 className="text-2xl font-bold">
