@@ -2,6 +2,7 @@ function CV() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-20">
 
+      {/* Page Header */}
       <div className="flex animate-[fadeUp_0.7s_ease-out] flex-col justify-between gap-6 sm:flex-row sm:items-end">
 
         <div>
@@ -44,15 +45,7 @@ function CV() {
             Motivated BSCS student interested in modern web development,
             frontend technologies and building practical applications.
           </p>
-
-          <p className="mt-3 text-slate-400">
-            Lahore, Pakistan
-          </p>
-
-          <p className="mt-2 text-slate-400">
-            hassanmughal085870@gmail.com
-          </p>
-
+          
         </section>
 
         {/* Education */}
@@ -62,15 +55,63 @@ function CV() {
             Education
           </h2>
 
-          <div className="mt-6 border-l-2 border-indigo-500 pl-5">
+          <div className="mt-6 space-y-8">
 
-            <h3 className="font-semibold">
-              BSCS
-            </h3>
+                        <div className="border-l-2 border-indigo-500 pl-5">
 
-            <p className="mt-2 text-slate-400">
-              Computer Science <strong>Student</strong>
-            </p>
+              <span className="rounded-full bg-slate-500/10 px-3 py-1 text-xs font-semibold text-slate-400">
+                Completed
+              </span>
+
+              <h3 className="mt-4 text-xl font-semibold">
+                Intermediate in ICS (Physics)
+              </h3>
+
+              <p className="mt-2 font-medium text-indigo-400">
+                Government Islamia Graduate College, Civil Lines Lahore (GIGCCL)
+              </p>
+
+              <p className="mt-2 text-sm text-slate-500">
+                Lahore, Pakistan
+              </p>
+
+              <p className="mt-3 leading-7 text-slate-400">
+                Successfully completed Intermediate in ICS with Physics,
+                building a strong foundation in computer science,
+                mathematics and physics.
+              </p>
+
+            </div>
+
+            {/* BSCS */}
+            <div className="border-l-2 border-indigo-500 pl-5">
+
+              <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-semibold text-indigo-300">
+                Currently Studying
+              </span>
+
+              <h3 className="mt-4 text-xl font-semibold">
+                Bachelor of Science in Computer Science (BSCS)
+              </h3>
+
+              <p className="mt-2 font-medium text-indigo-400">
+                Lahore Garrison University (LGU)
+              </p>
+
+              <p className="mt-2 text-sm text-slate-500">
+                Lahore, Pakistan
+              </p>
+
+              <p className="mt-3 leading-7 text-slate-400">
+                Currently pursuing a BSCS degree with a focus on computer
+                science, programming and modern software development
+                technologies.
+              </p>
+
+            </div>
+
+            {/* Intermediate */}
+
 
           </div>
 
@@ -90,8 +131,9 @@ function CV() {
             </h3>
 
             <p className="mt-2 text-slate-400">
-              Currently learning frontend and backend web development from NexSkill Arfa Tower Lahore,
-              including React.js and modern web technologies.
+              Currently learning frontend and backend web development from
+              NexSkill Arfa Tower Lahore, including React.js and modern web
+              technologies.
             </p>
 
           </div>
@@ -142,9 +184,18 @@ function CV() {
           <ul className="mt-6 space-y-3 text-slate-400">
 
             <li>• TECHORA — Tech E-commerce Website</li>
-            <li>• Weather App — React Weather Application</li>
-            <li>• WhatsApp Clone — HTML CSS & JavaScript Project</li>
-            <li>• Chatbot — Real Starbucks Chatbot</li>
+
+            <li>
+              • Weather App — React Weather Application
+            </li>
+
+            <li>
+              • WhatsApp Clone — HTML CSS & JavaScript Project
+            </li>
+
+            <li>
+              • Chatbot — Real Starbucks Chatbot
+            </li>
 
           </ul>
 

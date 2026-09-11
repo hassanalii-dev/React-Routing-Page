@@ -3,7 +3,7 @@ function Experience() {
     {
       year: "2026 - Present",
       title: "Full Stack Web Development",
-      company: "NexSkill",
+      company: "NexSkill Arfa Tower Lahore",
       location: "Lahore, Pakistan",
       description:
         "Currently learning Full Stack Web Development and building modern, responsive web applications. Working with frontend technologies and gradually developing full stack development skills.",

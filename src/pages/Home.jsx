@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 function Home() {
   return (
@@ -26,8 +26,8 @@ function Home() {
               </span>
             </h1>
 
-            <h2 className="mt-6 animate-[fadeUp_1s_ease-out] text-2xl font-semibold text-slate-200 sm:text-3xl">
-              Full Stack Web Development Learner
+            <h2 className="mt-6 animate-[fadeUp_1s_ease-out] text-2xl font-semibold text-slate-200 sm:text-2xl">
+              Full Stack Web Development Learner & BSCS Student
             </h2>
 
             <p className="mt-6 max-w-2xl animate-[fadeUp_1.1s_ease-out] text-lg leading-8 text-slate-400">

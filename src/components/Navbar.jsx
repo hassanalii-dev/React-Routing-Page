@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,29 +15,41 @@ function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 animate-[fadeDown_0.6s_ease-out] border-b border-white/10 bg-slate-950/90 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#07111f]/90 backdrop-blur-xl">
+      <div className="flex w-full items-center justify-between px-5 py-4 lg:px-8">
 
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        {/* Logo */}
+        <Link to="/" className="group flex items-center gap-3">
 
-        <Link
-          to="/"
-          className="text-2xl font-bold transition duration-300 hover:scale-105"
-        >
-          Hassan<span className="text-indigo-400">.</span>
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-indigo-400/30 bg-indigo-500/15 text-lg font-black text-indigo-300 shadow-lg shadow-indigo-500/10 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:border-indigo-300/50 group-hover:bg-indigo-500/25 group-hover:text-indigo-200 group-hover:shadow-indigo-500/20">
+            H
+          </div>
+
+          <div>
+            <p className="text-base font-bold tracking-tight text-white transition-colors duration-300 group-hover:text-indigo-300">
+              Hassan Ali
+            </p>
+
+            <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500">
+              Developer
+            </p>
+          </div>
+
         </Link>
 
-        {/* Desktop Menu */}
-        <div className="hidden items-center gap-8 md:flex">
+
+        {/* Desktop Navigation */}
+        <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 lg:flex">
 
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
-                `relative text-sm font-medium transition-all duration-300 ${
+                `rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300 ${
                   isActive
-                    ? "text-indigo-400"
-                    : "text-slate-300 hover:-translate-y-0.5 hover:text-white"
+                    ? "bg-indigo-500/10 text-indigo-400"
+                    : "text-slate-400 hover:bg-white/5 hover:text-white"
                 }`
               }
             >
@@ -45,27 +57,46 @@ function Navbar() {
             </NavLink>
           ))}
 
+        </nav>
+
+
+        {/* Let's Talk */}
+        <div className="hidden lg:block">
+
+          <Link
+            to="/contact"
+            className="inline-flex rounded-xl bg-indigo-500 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-indigo-400 hover:shadow-lg hover:shadow-indigo-500/20"
+          >
+            Let's Talk
+          </Link>
+
         </div>
 
-        {/* Mobile Button */}
+
+        {/* Mobile Menu Button */}
         <button
+          type="button"
           onClick={() => setMenuOpen(!menuOpen)}
-          className="rounded-lg border border-white/10 px-3 py-2 text-xl transition duration-300 hover:border-indigo-400/50 hover:bg-white/5 md:hidden"
+          className="rounded-lg border border-white/10 px-3 py-2 text-lg leading-none text-slate-300 transition-all duration-300 hover:border-indigo-400/40 hover:bg-white/5 hover:text-white lg:hidden"
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
         >
           {menuOpen ? "✕" : "☰"}
         </button>
 
       </div>
 
-      {/* Mobile Menu */}
+
+      {/* Mobile Navigation */}
       <div
-        className={`overflow-hidden border-t border-white/10 transition-all duration-300 md:hidden ${
+        className={`overflow-hidden border-t border-white/5 bg-[#07111f] transition-all duration-300 lg:hidden ${
           menuOpen
-            ? "max-h-96 opacity-100"
+            ? "max-h-[600px] opacity-100"
             : "max-h-0 border-t-0 opacity-0"
         }`}
       >
-        <div className="flex flex-col gap-5 px-6 py-5">
+
+        <nav className="flex flex-col px-5 py-3">
 
           {navLinks.map((link) => (
             <NavLink
@@ -73,10 +104,10 @@ function Navbar() {
               to={link.path}
               onClick={() => setMenuOpen(false)}
               className={({ isActive }) =>
-                `transition-all duration-300 ${
+                `border-b border-white/5 px-2 py-3.5 text-sm font-medium transition-all duration-300 ${
                   isActive
-                    ? "translate-x-1 text-indigo-400"
-                    : "text-slate-300 hover:translate-x-1 hover:text-white"
+                    ? "text-indigo-400"
+                    : "text-slate-400 hover:text-white"
                 }`
               }
             >
@@ -84,10 +115,19 @@ function Navbar() {
             </NavLink>
           ))}
 
-        </div>
+          <Link
+            to="/contact"
+            onClick={() => setMenuOpen(false)}
+            className="mt-4 rounded-xl bg-indigo-500 px-4 py-3 text-center text-sm font-semibold text-white transition-all duration-300 hover:bg-indigo-400"
+          >
+            Let's Talk
+          </Link>
+
+        </nav>
+
       </div>
 
-    </nav>
+    </header>
   );
 }
 
