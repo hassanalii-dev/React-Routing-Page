@@ -18,7 +18,6 @@ import Footer from "./components/Footer.jsx";
 createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
-
         <Route path="/home" element={<><Navbar /><Home /><Footer /></>} />
 
         <Route path="/about" element={<><Navbar /><About /><Footer /></>} />
@@ -32,8 +31,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/projects" element={<><Navbar /><Projects /><Footer /></>} />
 
         <Route path="/contact" element={<><Navbar /><Contact /><Footer /></>} />
-
       </Routes>
-
     </BrowserRouter>
+
 );
