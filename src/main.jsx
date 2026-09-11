@@ -16,10 +16,8 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
 
         <Route path="/home" element={<><Navbar /><Home /><Footer /></>} />
 
@@ -35,8 +33,7 @@ createRoot(document.getElementById("root")).render(
 
         <Route path="/contact" element={<><Navbar /><Contact /><Footer /></>} />
 
-        <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
+
     </BrowserRouter>
-  </StrictMode>
 );
