@@ -19,7 +19,7 @@ function Footer() {
             >
 
               <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-indigo-400/30 bg-indigo-500/15 font-black text-indigo-300 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-indigo-400/60 group-hover:bg-indigo-500/25 group-hover:shadow-lg group-hover:shadow-indigo-500/20">
-                H
+                H-A
               </div>
 
               <div>
