@@ -9,7 +9,7 @@ function Projects() {
       category: "AI Web Application",
       description:
         "A modern chatbot web application with an interactive user-friendly interface.",
-      technologies: "React.js, JavaScript, Tailwind CSS",
+      technologies: "React.js, JavaScript, CSS",
       link: "https://chatbot-by-hassan-alii.vercel.app/",
     },
     {
